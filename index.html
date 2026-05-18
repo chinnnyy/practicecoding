@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ember & Oak Cafe</title>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Ember and Oak Cafe home">
+      <span class="brand-mark">E&O</span>
+      <span>Ember & Oak</span>
+    </a>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="#menu">Menu</a>
+      <a href="#story">Story</a>
+      <a href="#visit">Visit</a>
+      <a class="nav-button" href="#reserve">Reserve</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">Small-batch coffee, warm pastry, slow mornings</p>
+        <h1>Ember & Oak Cafe</h1>
+        <p>
+          A cozy neighborhood cafe serving wood-roasted coffee, fresh bakes,
+          and quiet corners made for conversation.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="#menu">Explore menu</a>
+          <a class="button secondary" href="#reserve">Book a table</a>
+        </div>
+      </div>
+      <aside class="hero-panel" aria-label="Today's cafe highlights">
+        <p>Today</p>
+        <strong>Honey oat latte</strong>
+        <span>Paired with orange-cardamom morning buns until 11 AM.</span>
+      </aside>
+    </section>
+
+    <section class="menu-section" id="menu">
+      <div class="section-heading">
+        <p class="eyebrow">House favorites</p>
+        <h2>Made for lingering</h2>
+      </div>
+
+      <div class="filter-bar" aria-label="Menu filters">
+        <button class="filter active" type="button" data-filter="all">All</button>
+        <button class="filter" type="button" data-filter="coffee">Coffee</button>
+        <button class="filter" type="button" data-filter="bakery">Bakery</button>
+        <button class="filter" type="button" data-filter="brunch">Brunch</button>
+      </div>
+
+      <div class="menu-grid">
+        <article class="menu-card" data-category="coffee">
+          <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=900&q=80" alt="Latte art in a ceramic cup">
+          <div>
+            <h3>Oak-Smoked Latte</h3>
+            <p>Espresso, steamed milk, smoked vanilla, and a soft maple finish.</p>
+            <span>$5.40</span>
+          </div>
+        </article>
+        <article class="menu-card" data-category="coffee">
+          <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=900&q=80" alt="Cold coffee served with ice">
+          <div>
+            <h3>Brown Sugar Cold Brew</h3>
+            <p>Slow-steeped coffee with brown sugar syrup and cloud cream.</p>
+            <span>$5.75</span>
+          </div>
+        </article>
+        <article class="menu-card" data-category="bakery">
+          <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=900&q=80" alt="Fresh croissants on a bakery counter">
+          <div>
+            <h3>Butter Croissant</h3>
+            <p>Flaky, golden, and baked every morning with cultured butter.</p>
+            <span>$4.20</span>
+          </div>
+        </article>
+        <article class="menu-card" data-category="bakery">
+          <img src="https://images.unsplash.com/photo-1483695028939-5bb13f8648b0?auto=format&fit=crop&w=900&q=80" alt="Slice of cake on a plate">
+          <div>
+            <h3>Cocoa Fig Cake</h3>
+            <p>Dark cocoa sponge, roasted figs, espresso glaze, and sea salt.</p>
+            <span>$6.30</span>
+          </div>
+        </article>
+        <article class="menu-card" data-category="brunch">
+          <img src="https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=900&q=80" alt="Toast with egg and greens">
+          <div>
+            <h3>Garden Egg Toast</h3>
+            <p>Sourdough, soft egg, herbed ricotta, greens, and chili oil.</p>
+            <span>$9.80</span>
+          </div>
+        </article>
+        <article class="menu-card" data-category="brunch">
+          <img src="https://images.unsplash.com/photo-1484723091739-30a097e8f929?auto=format&fit=crop&w=900&q=80" alt="French toast with berries">
+          <div>
+            <h3>Brioche French Toast</h3>
+            <p>Custard-soaked brioche, berries, toasted almonds, and cream.</p>
+            <span>$10.50</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="story-section" id="story">
+      <div class="story-image" role="img" aria-label="Warm cafe counter with coffee equipment"></div>
+      <div class="story-copy">
+        <p class="eyebrow">Our corner</p>
+        <h2>Designed around calm rituals</h2>
+        <p>
+          Ember & Oak is built around honest ingredients, slower service, and
+          a room that feels soft even when the city is busy outside.
+        </p>
+        <div class="stats">
+          <span><strong>7 AM</strong> doors open</span>
+          <span><strong>14</strong> local bakers</span>
+          <span><strong>3</strong> roast profiles</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="visit-section" id="visit">
+      <div class="section-heading">
+        <p class="eyebrow">Plan a visit</p>
+        <h2>Open daily in the old market lane</h2>
+      </div>
+      <div class="visit-layout">
+        <div class="hours">
+          <h3>Hours</h3>
+          <p><span>Monday to Friday</span><strong>7:00 AM - 7:00 PM</strong></p>
+          <p><span>Saturday</span><strong>8:00 AM - 8:00 PM</strong></p>
+          <p><span>Sunday</span><strong>8:00 AM - 5:00 PM</strong></p>
+        </div>
+        <form class="reserve-form" id="reserve" aria-label="Reservation form">
+          <h3>Reserve a table</h3>
+          <label>
+            Name
+            <input type="text" name="name" placeholder="Your name" required>
+          </label>
+          <label>
+            Date
+            <input type="date" name="date" required>
+          </label>
+          <label>
+            Guests
+            <select name="guests" required>
+              <option value="1">1 guest</option>
+              <option value="2">2 guests</option>
+              <option value="3">3 guests</option>
+              <option value="4">4 guests</option>
+              <option value="5">5 guests</option>
+            </select>
+          </label>
+          <button class="button primary" type="submit">Request table</button>
+          <p class="form-message" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>Ember & Oak Cafe</span>
+    <span>42 Old Market Lane</span>
+    <span>hello@emberoak.example</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
